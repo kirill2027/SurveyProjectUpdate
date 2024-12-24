@@ -1,4 +1,8 @@
 package com.example.survey.repository
 
-class SurveyRepository {
-}
+import com.example.survey.model.SurveyResponse
+import org.springframework.data.jpa.repository.JpaRepository
+import org.springframework.stereotype.Repository
+
+@Repository
+interface SurveyRepository : JpaRepository<SurveyResponse, Long>
